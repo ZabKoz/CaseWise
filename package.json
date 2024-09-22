@@ -1,0 +1,14 @@
+{
+  "name": "junior-assistant",
+  "version": "1.0.0",
+  "description": "Junior Assistant",
+  "main": "main.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ZabKoz",
+  "license": "Apache-2.0"
+}
