@@ -21,7 +21,7 @@ module.exports = async (client) => {
     );
 
     for (const localCommand of localCommands) {
-      const { name, description, options } = localCommand;
+      const { name, description, description_localizations, options } = localCommand;
 
       const existingCommand = await applicationCommands.cache.find(
         (cmd) => cmd.name === name
@@ -55,6 +55,7 @@ module.exports = async (client) => {
         if (areCommandsDifferent(existingCommand, localCommand)) {
           await applicationCommands.edit(existingCommand.id, {
             description,
+            description_localizations,
             options,
           });
 
@@ -85,6 +86,7 @@ module.exports = async (client) => {
         await applicationCommands.create({
           name,
           description,
+          description_localizations,
           options,
         });
 
