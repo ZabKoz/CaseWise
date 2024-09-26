@@ -2,8 +2,8 @@ const { EmbedBuilder } = require("discord.js");
 
 module.exports = {
   name: "ping",
+  description: '🏓| Replies with the bot ping!',
   description_localizations: {
-    "en-US": "🏓| Replies with the bot ping!",
     "pl": "🏓| Informacja o pingu!",
   },
 
