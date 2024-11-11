@@ -1,5 +1,8 @@
 const chalk = require('chalk');
 
 module.exports = (client) => {
-  console.log(`${client.user.tag} is online.`);
+  console.log(
+    chalk.gray("[" + chalk.blue("SYSTEM") + "]"),
+    `I was logged in as a user:`, chalk.white(` ${client.user.tag}`)
+  );
 };
