@@ -1,7 +1,3 @@
-
-api/node_modules/
-api/.env
-
 bot/node_modules/
 bot/.env
 bot/config.json
