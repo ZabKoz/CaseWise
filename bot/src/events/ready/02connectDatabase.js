@@ -3,8 +3,7 @@ const mongoose = require('mongoose');
 
 module.exports = async (client) => {
   console.log(
-    chalk.gray("[" + chalk.blue("SYSTEM") + "]"),
-    `Start a connection to the database...`
+    chalk.gray("[" + chalk.blue("SYSTEM") + "]"), `Start a connection to the database...`
   );
 
   // Connect to MongoDB
@@ -16,8 +15,7 @@ module.exports = async (client) => {
     .then(() => {
       console.log(
         chalk.gray(
-          "[" + chalk.green("  OK  ") + "]",
-          `Connected to the database`
+          "[" + chalk.green("  OK  ") + "]", `Connected to the database`
         )
       );
     })

@@ -1,6 +1,6 @@
 const path = require("path");
 const chalk = require("chalk");
-const getAllFiles = require("../utils/getAllFiles");
+const getAllFiles = require("../utils/files/getAllFiles");
 
 module.exports = (client) => {
   console.log(

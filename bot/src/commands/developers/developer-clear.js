@@ -7,7 +7,7 @@ module.exports = {
     devOnly: true,
     testOnly: true,
     // options: Object[],
-    // deleted: true,
+    deleted: true,
   
     callback: async (client, interaction) => {
 
