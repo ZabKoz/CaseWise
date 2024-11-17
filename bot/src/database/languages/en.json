@@ -1,0 +1,32 @@
+{
+  "long_name": "English",
+  "short_name": "en",
+
+  "commons": {
+    "yes": "Yes",
+    "no": "No",
+    "bot": {
+      "noperm": "I do not have the authority to execute this command!",
+      "needperm": "I need the {0} permission to execute this command!"
+    }
+  },
+  "cmds": {
+    "setup_language": {
+      "ConfirmEmbed": {
+        "description": "Are you sure, changing the language to <langName>?"
+      },
+      "errorEmbed": {
+        "description": "Something went wrong, unfortunately but an error occurred."
+      },
+      "badUserEmbed": {
+        "description": "HEY! You cannot make a choice on this issue. The person who can make a choice is: <userName>!"
+      },
+      "confirmedEmbed": {
+        "description": "It worked! The language has been changed to <langName>."
+      },
+      "cancelledEmbed": {
+        "description": "The language change has been canceled!"
+      }
+    }
+  }
+}

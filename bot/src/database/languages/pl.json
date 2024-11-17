@@ -1,0 +1,33 @@
+{
+  "long_name": "Polski",
+  "short_name": "pl",
+
+  "commons": {
+    "yes": "Tak",
+    "no": "Nie",
+    "bot": {
+      "noperm": "Nie mam uprawnień do wykonania tej komendy!",
+      "needperm": "Potrzebuję uprawnienia {0} aby wykonać to polecenie!"
+    }
+  },
+  "cmds": {
+    "setup_language": {
+      "ConfirmEmbed": {
+        "description": "Czy jesteś pewien, zmiany jezyka na <langName>?"
+      },
+      "errorEmbed": {
+        "description": "Coś poszło nie tak, niestety, ale wystąpił błąd."
+      },
+      "badUserEmbed": {
+        "description": "HEJ!? Nie możesz dokonać wyboru w tej kwestii. Osobą mogącą dokonać wyboru jest: <userName>!"
+      },
+      "confirmedEmbed": {
+        "description": "Udało się! Język został zmieniony na <langName>."
+      },
+      "cancelledEmbed": {
+        "description": "Anulowano zmianę jezyka! "
+      }
+    },
+    "my": "my"
+  }
+}

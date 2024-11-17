@@ -1,0 +1,33 @@
+{
+  "long_name": "Deutsch",
+  "short_name": "de",
+
+  "commons": {
+    "yes": "Ja",
+    "no": "Nein",
+    "bot": {
+      "noperm": "Ich habe nicht die Befugnis, diesen Befehl auszuführen!",
+      "needperm": "Ich brauche das Recht {0}, um diesen Befehl auszuführen!"
+    }
+  },
+
+  "cmds": {
+    "setup_language": {
+      "ConfirmEmbed": {
+        "description": "Sind Sie sicher, dass Sie die Sprache auf <LangName> ändern?"
+      },
+      "errorEmbed": {
+        "description": "Leider ist etwas schief gelaufen, aber es ist ein Fehler aufgetreten."
+      },
+      "badUserEmbed": {
+        "description": "HEY! Sie können in dieser Frage keine Wahl treffen. Die Person, die eine Wahl treffen kann, ist: <Benutzername>!"
+      },
+      "confirmedEmbed": {
+        "description": "Es hat geklappt! Die Sprache wurde in <langName> geändert."
+      },
+      "cancelledEmbed": {
+        "description": "Die Sprachänderung wurde rückgängig gemacht!"
+      }
+    }
+  }
+}

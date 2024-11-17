@@ -1,0 +1,33 @@
+{
+  "long_name": "Česky",
+  "short_name": "cs",
+
+  "commons": {
+    "yes": "Ano",
+    "no": "Ne",
+    "bot": {
+      "noperm": "K provedení tohoto příkazu nemám oprávnění!",
+      "needperm": "K provedení tohoto příkazu potřebuji oprávnění {0}!"
+    }
+  },
+
+  "cmds": {
+    "setup_language": {
+      "ConfirmEmbed": {
+        "description": "Jste si jisti, že změna jazyka na <langName>?"
+      },
+      "errorEmbed": {
+        "description": "Něco se bohužel pokazilo, ale došlo k chybě."
+      },
+      "badUserEmbed": {
+        "description": "HEJ! V této otázce si nemůžete vybrat. Osoba, která si může vybrat, je: <userName>!"
+      },
+      "confirmedEmbed": {
+        "description": "Fungovalo to! Jazyk byl změněn na <langName>."
+      },
+      "cancelledEmbed": {
+        "description": "Změna jazyka byla zrušena!"
+      }
+    }
+  }
+}
