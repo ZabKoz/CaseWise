@@ -28,6 +28,15 @@
       "cancelledEmbed": {
         "description": "Změna jazyka byla zrušena!"
       }
+    },
+    "ping": {
+      "pingingEmbed": {
+        "description": "<emoji> Výpočet ping..."
+      },
+      "pingEmbed": {
+        "Field1": "Latence webového socketu",
+        "Field2": "Zpoždění API"
+      }
     }
   }
 }

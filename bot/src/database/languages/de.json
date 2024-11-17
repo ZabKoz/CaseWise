@@ -28,6 +28,15 @@
       "cancelledEmbed": {
         "description": "Die Sprachänderung wurde rückgängig gemacht!"
       }
+    },
+    "ping": {
+      "pingingEmbed": {
+        "description": "<emoji> Berechnen von Ping..."
+      },
+      "pingEmbed": {
+        "Field1": "Websocket-Latenzzeit",
+        "Field2": "API-Latenzzeit"
+      }
     }
   }
 }

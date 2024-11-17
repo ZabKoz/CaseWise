@@ -14,6 +14,7 @@ const client = new Client({
 
 client.languages = new Collection();
 client.embedColors = require('./database/configuration/embedColors.json');
+client.emoji = require('./database/configuration/emojis.json');
 
 eventHandler(client);
 languageHandler(client);

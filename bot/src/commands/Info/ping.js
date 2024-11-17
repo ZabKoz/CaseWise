@@ -1,30 +1,38 @@
 const { EmbedBuilder } = require("discord.js");
+const translateText = require('../../utils/text/translator');
 
 module.exports = {
   name: "ping",
   description: '🏓| Replies with the bot ping!',
   description_localizations: {
+    "cs": "🏓| Odpovídá bot ping!",
+    "de": "🏓| Antwortet mit dem Bot-Ping!",
     "pl": "🏓| Informacja o pingu!",
   },
-
   callback: async (client, interaction) => {
+    // Gathering data on what language to use.
+    const lang = await translateText(client, interaction);
+    // 
+    const emotes = await client.emoji;
     //
     let circles = {
-      good: "<a:Hight:1287602176038015080>",
-      okay: "<a:Mid:1287602164100894731>",
-      bad: "<a:Low:1287602155355639848>",
+      good: emotes.circleGood,
+      okay: emotes.circleOkay,
+      bad: emotes.circleBad,
     };
     //
     await interaction.deferReply({ ephemeral: true }).catch(() => { });
     //
-    const pinging = await interaction.followUp({
-      embeds: [
-        {
-          color: 16716947,
-          description: `<a:loading:1287629573378543656> Calculating ping...`,
-        },
-      ],
-    });
+    const pingingEmbed = new EmbedBuilder()
+      .setColor(client.embedColors.default)
+      .setDescription(lang.cmds.ping.pingingEmbed.description.replace(/<emoji>/g, emotes.loading.loading1))
+      .setTimestamp()
+      .setFooter({
+        text: `Requested by ${interaction.user.tag}`,
+        iconURL: interaction.user.displayAvatarURL(),
+      });
+    // Sending an embed.
+    const pinging = await interaction.followUp({ embeds: [pingingEmbed], });
     // Websocket latency
     const webLateacy = client.ws.ping;
     // Api latency
@@ -40,18 +48,21 @@ module.exports = {
     //
     const pingEmbed = new EmbedBuilder()
       .setColor(embedColor)
-      .setTimestamp()
-      .setFooter({ text: `Verification time` })
       .setFields(
         {
-          name: "Websocket latency",
+          name: lang.cmds.ping.pingEmbed.Field1,
           value: `${webEmoji} \`${webLateacy}ms\``,
         },
         {
-          name: "API latency",
+          name: lang.cmds.ping.pingEmbed.Field2,
           value: `${apiEmoji} \`${apiLateacy}ms\``,
         }
-      );
+      )
+      .setTimestamp()
+      .setFooter({
+        text: `Requested by ${interaction.user.tag}`,
+        iconURL: interaction.user.displayAvatarURL(),
+      });
     //
     await interaction.editReply({ embeds: [pingEmbed], content: "\u200b", ephemeral: true, });
   },

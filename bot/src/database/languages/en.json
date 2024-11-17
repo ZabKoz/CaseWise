@@ -27,6 +27,15 @@
       "cancelledEmbed": {
         "description": "The language change has been canceled!"
       }
+    },
+    "ping": {
+      "pingingEmbed": {
+        "description": "<emoji> Calculating ping..."
+      },
+      "pingEmbed": {
+        "Field1": "Websocket latency",
+        "Field2": "API latency"
+      }
     }
   }
 }

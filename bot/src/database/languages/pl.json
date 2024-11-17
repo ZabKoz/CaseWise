@@ -28,6 +28,14 @@
         "description": "Anulowano zmianę jezyka! "
       }
     },
-    "my": "my"
+    "ping": {
+      "pingingEmbed": {
+        "description": "<emoji> Obliczanie pingu..."
+      },
+      "pingEmbed": {
+        "Field1": "Opóźnienie websocket",
+        "Field2": "Opóźnienie API"
+      }
+    }
   }
 }
