@@ -1,7 +1,7 @@
 {
-  "name": "junior-assistant-api",
+  "name": "casewise-api",
   "version": "1.0.0",
-  "description": "Junior Assistant",
+  "description": "casewise-api",
   "main": "src/index.js",
   "directories": {
     "doc": "docs"

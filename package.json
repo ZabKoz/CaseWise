@@ -1,7 +1,7 @@
 {
-  "name": "junior-assistant",
+  "name": "casewise",
   "version": "1.0.0",
-  "description": "Junior Assistant",
+  "description": "casewise",
   "main": "main.js",
   "directories": {
     "doc": "docs"
