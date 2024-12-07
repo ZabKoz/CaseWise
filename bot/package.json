@@ -1,5 +1,5 @@
 {
-  "name": "junior-assistant-bot",
+  "name": "casewise-bot",
   "version": "1.0.0",
   "main": "src/index.js",
   "scripts": {
@@ -10,7 +10,7 @@
   "description": "",
   "dependencies": {
     "chalk": "^2.4.1",
-    "discord.js": "^14.16.2",
+    "discord.js": "^14.16.3",
     "dotenv": "^16.4.5",
     "fs": "^0.0.1-security",
     "mongoose": "^8.7.0",

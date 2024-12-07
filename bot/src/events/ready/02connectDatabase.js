@@ -1,5 +1,6 @@
 const chalk = require('chalk');
 const mongoose = require('mongoose');
+const { loadDatabase } = require('../../utils/database/loadDatabase');
 
 module.exports = async (client) => {
   // Display information about the start of the connection to the database.
@@ -13,6 +14,7 @@ module.exports = async (client) => {
     .then(() => {
       // Display information about the connection to the database
       console.log(chalk.gray("[" + chalk.green("  OK  ") + "]", `Connected to the database`));
+      loadDatabase(client)
     })
     .catch((err) => {
       // Displaying database connection error information

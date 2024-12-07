@@ -1,6 +1,6 @@
 const { Schema, model } = require('mongoose');
 
-const levelSchema = new Schema({
+const levelsSchema = new Schema({
   userId: {
     type: String,
     required: true,
@@ -17,6 +17,10 @@ const levelSchema = new Schema({
     type: Number,
     default: 0,
   },
+  lastUpdated: {
+    type: Date,
+    default: new Date()
+  }
 });
 
-module.exports = model('Level', levelSchema);
+module.exports = model('levels', levelsSchema);
